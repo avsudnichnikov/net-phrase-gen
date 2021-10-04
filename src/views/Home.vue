@@ -20,7 +20,7 @@
         app-date-picker(label="Старт" date=startDate
           @update-date="updateStartDate")
         app-date-picker(label="Дедлайн" date=endDate
-          v-if="this.state.type.id === 1"
+          v-if="this.state.type.id === 2"
           @update-date="updateEndDate")
 </template>
 

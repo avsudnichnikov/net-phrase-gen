@@ -96,9 +96,9 @@ export default {
             'курс будет засчитан пройденным при выполнении ';
         }
         if (this.state.unit.count !== this.state.unit.need) {
-          result += `${this.state.unit.need} из ${this.state.unit.count} домашних задания.`;
+          result += `${this.state.unit.need} из ${this.state.unit.count} домашних заданиях.`;
         } else {
-          result += `всех ${this.state.unit.need} домашних задания.`;
+          result += `всех ${this.state.unit.need} домашних заданиях.`;
         }
         return result;
       }

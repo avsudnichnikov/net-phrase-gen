@@ -1,6 +1,8 @@
 {
-  "name": "app",
+  "name": "net-phrase-gen",
   "version": "0.1.0",
+  "description": "net-phrase-gen",
+  "author": "avsudnichnikov",
   "private": true,
   "scripts": {
     "serve": "vue-cli-service serve",

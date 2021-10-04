@@ -90,15 +90,15 @@ export default {
         let result = '';
         if (this.state.unit.work) {
           result += 'Для успешного прохождения вам требуется выполнить итоговую работу,  ' +
-            `которая будет доступна при условии, что вы выполнили `;
+            `которая будет доступна при условии выполнения `;
         } else {
           result += 'Обратите внимание, что в данном модуле нет итоговой работы - ' +
             'курс будет засчитан пройденным при выполнении ';
         }
         if (this.state.unit.count !== this.state.unit.need) {
-          result += `${this.state.unit.need} из ${this.state.unit.count} домашних заданиях.`;
+          result += `${this.state.unit.need} из ${this.state.unit.count} домашних заданий.`;
         } else {
-          result += `всех ${this.state.unit.need} домашних заданиях.`;
+          result += `всех ${this.state.unit.need} домашних заданий.`;
         }
         return result;
       }
@@ -120,7 +120,7 @@ export default {
             `Для завершения модуля вам необходимо до ${dateToStr(this.state.endDate)} выполнить `;
         }
         if (this.state.unit.count !== this.state.unit.need) {
-          result += `${this.state.unit.need} домашних задания из ${this.state.unit.count}`;
+          result += `${this.state.unit.need} домашних заданий из ${this.state.unit.count}`;
         } else {
           result += `все домашние задания (которых всего ${this.state.unit.need})`;
         }

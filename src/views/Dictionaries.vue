@@ -5,6 +5,7 @@
         v-text-field(
           label="Приветствия"
           v-model="dictionaries.greetings"
+          hint="Разделитель - точка с запятой (;)"
           @keydown="changedGr = true")
           template(slot="append")
             v-btn(icon @click="save")
@@ -14,6 +15,7 @@
         v-text-field(
           label="Эмоджи"
           v-model="dictionaries.emojis"
+          hint="Без разделителя, только unicode"
           @keydown="changedEm = true")
           template(slot="append")
             v-btn(icon @click="save")
@@ -23,6 +25,7 @@
         v-text-field(
           label="Напутствия"
           v-model="dictionaries.goodbyes"
+          hint="Разделитель - точка с запятой (;)"
           @keydown="changedGb = true")
           template(slot="append")
             v-btn(icon @click="save")

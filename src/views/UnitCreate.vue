@@ -3,14 +3,19 @@
     v-card
       v-card-title Добавить курс
       v-card-text
-        v-text-field(label="Название" v-model="unit.title" :rules="rules.name")
+        v-text-field(label="Название"
+          v-model="unit.title"
+          :rules="rules.name")
         v-row
           v-col
             v-select(label="Нужно" :items="[0, 1, 2]" v-model="unit.need")
           v-col
             v-select(label="Всего" :items="[0, 1, 2]" v-model="unit.count")
         v-checkbox(v-model="unit.work" label="Итоговая работа")
-        v-text-field(label="Занятия" v-model="unit.lessons" :rules="rules.lessons")
+        v-text-field(label="Занятия"
+          v-model="unit.lessons"
+          :rules="rules.lessons"
+          hint="Разделитель - точка с запятой (;)")
       v-card-actions.justify-end.d-flex
         v-btn(@click="cancel") Отмена
         v-btn(color="success" @click="save") Добавить

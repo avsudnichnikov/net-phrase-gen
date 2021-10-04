@@ -45,13 +45,14 @@ const actions = {
   async create({commit, rootGetters}, unit) {
     const units = state.all;
     units.push(unit);
+    await localStorage.setItem('state-units', JSON.stringify(units));
     commit('SET_ALL', units);
   },
   async remove({commit, rootGetters}, id) {
     const units = state.all;
     const index = units.findIndex((item) => item.id === id);
     units.splice(index, 1);
-    localStorage.setItem('state-units', JSON.stringify(units));
+    await localStorage.setItem('state-units', JSON.stringify(units));
     commit('SET_ALL', units);
   },
 };

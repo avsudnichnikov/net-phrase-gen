@@ -11,8 +11,12 @@
       p {{phrase.deadline}}
       p {{phrase.added}}
       p {{this.goodbye + ' @channel'}}
-      v-btn(outlined block color="primary" @click="copy") Копировать
-      v-btn.mt-3(outlined block color="warning" @click="getRands") Изменить случайные
+      v-btn(outlined block color="warning" @click="getRands")
+        v-icon mdi-dice-6
+        | Изменить случайные
+      v-btn.mt-3(outlined block color="primary" @click="copy")
+        v-icon mdi-content-copy
+        | Копировать написанное
 </template>
 
 <script>

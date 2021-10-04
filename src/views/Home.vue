@@ -90,12 +90,12 @@ export default {
             `которая будет доступна при условии, что вы выполнили `;
         } else {
           result += 'Обратите внимание, что в данном модуле нет итоговой работы - ' +
-            'курс будет засчитан пройденным при выполнении всех ';
+            'курс будет засчитан пройденным при выполнении ';
         }
         if (this.state.unit.count !== this.state.unit.need) {
           result += `${this.state.unit.need} из ${this.state.unit.count} домашних задания.`;
         } else {
-          result += `все ${this.state.unit.need} домашних задания.`;
+          result += `всех ${this.state.unit.need} домашних задания.`;
         }
         return result;
       }

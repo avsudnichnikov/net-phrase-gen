@@ -134,7 +134,7 @@ export default {
         'своевременно увидеть и помочь вам.';
 
       return {
-        unit: `Коллеги, завершился модуль "${this.state.unit.title}"`,
+        unit: `Модуль "${this.state.unit.title}" завершается ${dateToStr(this.state.startDate)}`,
         main: accessWork() + mainSuffix,
         deadline: (this.state.unit.work) ? `Дедлайн по итоговой работе - ${dateToStr(this.state.endDate)}.` : '',
         added: (this.state.unit.work) ? added : '',

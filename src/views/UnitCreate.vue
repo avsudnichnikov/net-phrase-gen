@@ -8,9 +8,9 @@
           :rules="rules.name")
         v-row
           v-col
-            v-select(label="Нужно" :items="[0, 1, 2]" v-model="unit.need")
+            v-select(label="Нужно занятий для допуска" :items="[1, 2, 3, 4, 5, 6, 7, 8, 9]" v-model="unit.need")
           v-col
-            v-select(label="Всего" :items="[0, 1, 2]" v-model="unit.count")
+            v-select(label="Всего занятий в модуле" :items="[1, 2, 3, 4, 5, 6, 7, 8, 9]" v-model="unit.count")
         v-checkbox(v-model="unit.work" label="Итоговая работа")
         v-text-field(label="Занятия"
           v-model="unit.lessons"
